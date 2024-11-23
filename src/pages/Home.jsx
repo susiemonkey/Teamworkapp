@@ -1,9 +1,18 @@
-import React from 'react';
+import CarouselWithContent from "../components/CarouselWithContent";
+import RecommendedProducts from "../components/RecommendedProducts";
+ 
+function Home () {
 
-export const Home = () => {
-    return (
-        <h1>Hello from Home page</h1>
-    )
+  return (
+    <>
+      <CarouselWithContent />
+      <div className="flex justify-center">
+        <RecommendedProducts />
+        {/* <BlogCard /> */}
+      </div>
+      
+    </>
+  )
 }
 
 export default Home
